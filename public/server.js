@@ -44,8 +44,9 @@ seneca.ready(function () {
     method: 'GET',
     path: '/seneca-browser.js',
     handler: {
-     // file: __dirname + '/../seneca-browser.js'
-      file: { path : __dirname + '/../seneca-browser.js', confine: false}
+      // Hapi throws 403 error with this config. Changed to line below.
+      // file: __dirname + '/../seneca-browser.js'
+      file: { path : __dirname + '/../seneca-browser.js', confine: false }
     }
   })
 
