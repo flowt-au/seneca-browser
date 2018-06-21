@@ -9,3 +9,6 @@ Waiting to see if anyone has any thoughts.
 
 "Distributed architecture rule of thumb: keep together what requires request-response. Separate what can follow a pub-sub model."
 
+Good overview of macro architecture:
+https://medium.freecodecamp.org/microservices-from-idea-to-starting-line-ae5317a6ff02
+
