@@ -58,18 +58,25 @@
           // Replace the property with the string version
         pat[key] = val;
 
-          // custom.gex ie true is passed in
+          // custom.gex ie true is passed in 
+          // gexers and plains are arrays
+          // So, basically, push the key onto either of those arrays
+          // If the key contains  * or ? it goes to gexers array
         (( custom.gex && val.match(/[\*\?]/) ) ? gexers : plains ).push(key)
       })
-
+          // Sort the arrays of keys
       plains = plains.sort()
       gexers = gexers.sort()
 
+          // Join them into one array.
+          // Note they are concatenated, not merged,
+          // so gexers added to end of plains
       keys = plains.concat(gexers)
 
-
+          // Init empty objects
       var keymap = top, valmap
 
+          // Loop through the keys
       for( var i = 0; i < keys.length; i++ ) {
         var key = keys[i]
         var val = pat[key]
