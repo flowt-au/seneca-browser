@@ -1,6 +1,6 @@
 
 Testing the seneca-browser.
-1. Run node server.js from /public
+1. Run node server.js from /public ie $node server.js
 2. Code up index.html and relevant .js files
 3. Browse http://localhost:8080/ to run it.
 4. Watch the console in your debugger window
